@@ -1,0 +1,25 @@
+{
+	"name": "iot-decoder",
+	"version": "0.1.0",
+	"packageManager": "pnpm@10.2.1",
+	"author": "https://github.com/LazyDoomSlayer",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@commitlint/cli": "^19.7.1",
+		"@commitlint/config-conventional": "^19.7.1",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"turbo": "^2.4.0"
+	},
+	"lint-staged": {
+		"*": ["pnpm biome:check"]
+	},
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run start:dev",
+		"lint": "turbo run lint",
+		"biome:check": "biome check .",
+		"biome:fix": "biome check . --write",
+		"prepare": "husky"
+	}
+}
