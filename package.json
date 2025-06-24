@@ -1,5 +1,5 @@
 {
-	"name": "iot-decoder",
+	"name": "@lazydoomslayer/iot-decoder",
 	"version": "0.1.0",
 	"packageManager": "pnpm@10.2.1",
 	"author": "https://github.com/LazyDoomSlayer",

@@ -4,10 +4,7 @@ import dts from "vite-plugin-dts";
 export default {
 	build: {
 		lib: {
-			entry: [
-				resolve(__dirname, "src/index.ts"),
-				resolve(__dirname, "src/log.ts"),
-			],
+			entry: [resolve(__dirname, "src/index.ts")],
 			name: "doomguy",
 			fileName: (format, name) => {
 				if (format === "es") {
@@ -18,7 +15,7 @@ export default {
 			},
 		},
 		rollupOptions: {
-			external: ["moment"],
+			external: [],
 		},
 	},
 	plugins: [dts()],
